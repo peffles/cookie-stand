@@ -1,7 +1,7 @@
 'use strict'
 
 //Global Variable
-var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm'];
+var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 var firstAndPike = {
     name: 'First & Pike',
@@ -90,23 +90,22 @@ var alki = {
 
 function render(storeObject) {
     storeObject.genSalesPerHour();
+    var tBod = document.createElement('tbody');
+    var tableRow = document.createElement('tr');
 
-    var p = document.createElement('p');
-    var title = document.createElement('p');
-    title.append(storeObject.name);
-    p.appendChild(title);
-    var ul = document.createElement('ul');
+    var thead = document.createElement('thead');
+    thead.append(storeObject.name);
+    tableRow.appendChild(thead)
     for (var i = 0; i < storeObject.salesPerHour.length; i++) {
-        var li = document.createElement('li');
-        li.append(storeHours[i] + ': ' + storeObject.salesPerHour[i]);
-        ul.appendChild(li)
+        var td = document.createElement('td');
+        td.append(storeObject.salesPerHour[i]);
+        tableRow.appendChild(td)
     }
 
-    p.appendChild(ul);
+    tBod.appendChild(tableRow);
 
-    document.body.appendChild(p);
+    document.getElementById('table1').appendChild(tBod);
 }
-
 
 render(firstAndPike);
 render(seaTac);
