@@ -88,14 +88,29 @@ var alki = {
     }
 };
 
+function renderHours(hours) {
+  var head = document.createElement('thead');
+  var td = document.createElement('td');
+  td.append('Store Hours');
+  head.appendChild(td);
+
+  for (var i = 0; i < hours.length; i++) {
+    var td = document.createElement('td');
+    td.append(hours[i]);
+    head.appendChild(td);
+  }
+
+  document.getElementById('table1').appendChild(head);
+}
+
 function render(storeObject) {
     storeObject.genSalesPerHour();
     var tBod = document.createElement('tbody');
+    var hoursRow = document.createElement('tr');
     var tableRow = document.createElement('tr');
-
-    var thead = document.createElement('thead');
-    thead.append(storeObject.name);
-    tableRow.appendChild(thead)
+    var rowTitle = document.createElement('td');
+    rowTitle.append(storeObject.name);
+    tableRow.appendChild(rowTitle)
     for (var i = 0; i < storeObject.salesPerHour.length; i++) {
         var td = document.createElement('td');
         td.append(storeObject.salesPerHour[i]);
@@ -107,6 +122,7 @@ function render(storeObject) {
     document.getElementById('table1').appendChild(tBod);
 }
 
+renderHours(storeHours);
 render(firstAndPike);
 render(seaTac);
 render(seattleCenter);

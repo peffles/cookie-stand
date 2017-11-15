@@ -5,29 +5,35 @@ body {
 	background-color: #D0AE73;
 	font-family: 'Bree Serif';
 	text-align: center;	
+
 }
 table {
 	text-align: center;
-	background-color: #33332E;
+	background-color: #7F625D;
 	width: 25%;
 	position: relative;
 	margin: 0 auto;
-
 	padding: 5px;
 	min-width: 800px;
 
 }
 thead {
-	background-color: #BB6A3D;
+	background-color: #CC6958;
+	font-weight: bolder;
+	white-space: nowrap;
+	padding: 0 7px;
+	width: 12px;
+
+}
+
+td:first-of-type {
+	background-color: #CC6958;
 	font-weight: bolder;
 	white-space: nowrap;
 	padding: 0 7px;
 	width: 125px;
 
-}
-
-td {
-	/*border-right: 1px solid white;*/
+	
 }
 
 thead {
