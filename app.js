@@ -2,7 +2,14 @@
 
 //Global Variable
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm'];
-
+function Store(anme, maxCust, minCust, avgSale) {
+  this.name = name;
+  this.maxCust = maxCust;
+  this.minCust = minCust;
+  this.avgSale = avgSale;
+  this.cookiesPerHour = [];
+  this.total = 0;
+}
 var firstAndPike = {
   name: 'First & Pike',
   minCust: 23,
