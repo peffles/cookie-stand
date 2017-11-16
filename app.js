@@ -1,7 +1,7 @@
 'use strict';
 
 //Global Variable
-var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var shops = [];
 function Store(name, maxCust, minCust, avgSale) {
   this.name = name;
@@ -70,15 +70,3 @@ function onSubmit(event) {
 
 }
 formEl.addEventListener('submit', onSubmit);
-
-
-
-// .addEventListener('submit', onSubmitUpd);
-
-// function updateStore(index, min, max, avg) {
-//   console.log('update store');
-//   console.log(index);
-//   new Store(index, min, max, avg, 14, [], 0);
-//   var storeTds = document.querySelectorAll('td.footTd');
-//   storeTds[0].textContent = 'gjjdgjf';
-// }
