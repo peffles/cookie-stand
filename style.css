@@ -1,10 +1,10 @@
 h1 {
-	
+
 }
 body {
 	background-color: #D0AE73;
 	font-family: 'Bree Serif';
-	text-align: center;	
+	text-align: center;
 
 }
 table {
@@ -33,15 +33,22 @@ td:first-of-type {
 	padding: 0 7px;
 	width: 125px;
 
-	
-}
-
-thead {
 
 }
+section {
+	background-color:#CC6958;
+	max-width: 42%;
+	margin-left: 29%;
+}
+input:focus {
+	background-color: #CC6958;
+	font-size: 120%;
 
-
+}
+button {
+	margin-bottom: 10px;
+}
 tr {
-width: 5%;	
+width: 5%;
 
 }
