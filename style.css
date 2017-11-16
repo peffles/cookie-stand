@@ -52,3 +52,10 @@ tr {
 width: 5%;
 
 }
+
+div.label {
+	width: 200px;
+display: inline-block;
+text-align: left;
+margin-left: 100px;
+}
