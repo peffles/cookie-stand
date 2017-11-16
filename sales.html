@@ -13,7 +13,22 @@
 		<table id="table1" cellpadding="0">
 
 		</table>
-
+		<section>
+      <h2>Add New Shop!</h2>
+      <form id="store-form">
+        <p>Name: <input name  = "newName" type = "text" required = "required">
+        </p>
+        <p>Minimum Customers:
+          <input name = "newMin" min = "0" type = "number" required = "required">
+        </p>
+        <p>Maximum Customers:
+          <input name="newMax" min = "0" type = "number" required = "required">
+        </p>
+        <p>Average number of cookies sold:
+          <input name="newAvg" min = "0" step = "0.1" type="number" required = "required">
+        </p>
+        <p>
+          <button type="submit">submit</button>
 		<footer>
 		</footer>
 		<script src="app.js" type="text/javascript"></script>
