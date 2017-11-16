@@ -53,3 +53,32 @@ new Store('Capitol Hill', 20, 38, 2.3, 14, [], 0);
 new Store('Alki', 2, 16, 4.6, 14, [], 0);
 console.log('hit',shops);
 console.log('hit',storeHours);
+var formEl = document.getElementById('new-shop');
+
+function onSubmit(event) {
+  event.preventDefault();
+  var form = {
+    newName: event.target.newName.value,
+    newMin: parseInt(event.target.newMin.value, 10),
+    newMax: parseInt(event.target.newMax.value, 10),
+    newAvg: parseFloat(event.target.newAvg.value, 10),
+  };
+
+  shops.push(new Store(form.newName, form.newMin, form.newMax, form.newAvg, 14, [], 0));
+
+  shops[shops.length - 1].render();
+
+}
+formEl.addEventListener('submit', onSubmit);
+
+
+
+// .addEventListener('submit', onSubmitUpd);
+
+// function updateStore(index, min, max, avg) {
+//   console.log('update store');
+//   console.log(index);
+//   new Store(index, min, max, avg, 14, [], 0);
+//   var storeTds = document.querySelectorAll('td.footTd');
+//   storeTds[0].textContent = 'gjjdgjf';
+// }
