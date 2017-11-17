@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 'use strict';
 
 //Global Variable
@@ -71,5 +71,3 @@ function onSubmit(event) {
 
 }
 formEl.addEventListener('submit', onSubmit);
-=======
->>>>>>> 7f7c4b364cb7fb5e4ca31b09cadc524d36cccab3
