@@ -1,6 +1,19 @@
 h1 {
 	font-size: 56px;
 }
+h2 {
+	font-size: 36px;
+}
+nav {
+	background-color: cyan;
+	height: 50px;
+}
+a {
+	text-decoration: none;
+	font-family: 'Bree Serif';
+	color: black;
+	font-size:
+}
 body {
 	background-color: #D0AE73;
 	font-family: 'Bree Serif';
