@@ -5,11 +5,11 @@ h2 {
 	font-size: 30px;
 }
 nav {
-	background-color: cyan;
+	background-color: #D0AE73;
 	height: 50px;
 	position: relative;
 	text-align: center;
-	padding-top: 3px;
+	margin-top: 20px;
 	border-radius: 10px;
 
 }
