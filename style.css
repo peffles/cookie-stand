@@ -86,3 +86,19 @@ display: inline-block;
 text-align: left;
 margin-left: 100px;
 }
+hr {
+	padding-top: 10px;
+	border-top: 1px dotted #8c8b8b;
+	border-bottom: 1px dotted #fff;
+	border-color: black;
+}
+.sidebar {
+	background-color: rgba(204,105,88,0.2);
+	width: 18%;
+	height: 500px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -48%;
+	margin-top: 3.3%;
+
+}
