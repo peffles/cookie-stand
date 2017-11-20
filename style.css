@@ -1,6 +1,33 @@
 h1 {
 	font-size: 56px;
 }
+h2 {
+	font-size: 30px;
+}
+nav {
+	background-color: #D0AE73;
+	height: 50px;
+	position: relative;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 10px;
+
+}
+a {
+	text-decoration: none;
+	font-family: 'Bree Serif';
+	color: black;
+	display: inline-block;
+	background-color: #7F625D;
+	padding: 10px;
+	margin-top: 4px;
+	padding-right: 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+a:hover {
+	background-color: #CC6958;
+}
 body {
 	background-color: #D0AE73;
 	font-family: 'Bree Serif';
@@ -37,12 +64,12 @@ td:first-of-type {
 }
 section {
 	background-color:#CC6958;
-	max-width: 42%;
-	margin-left: 29%;
+	max-width: 56%;
+	margin-left: 22%;
 }
 input:focus {
 	background-color: #CC6958;
-	font-size: 120%;
+	font-size: 101%;
 
 }
 button {
@@ -58,4 +85,23 @@ div.label {
 display: inline-block;
 text-align: left;
 margin-left: 100px;
+}
+hr {
+	padding-top: 10px;
+	border-top: 1px dotted #8c8b8b;
+	border-bottom: 1px dotted #fff;
+	border-color: black;
+}
+.sidebar {
+	background-color: rgba(204,105,88,0.2);
+	width: 19%;
+	height: 500px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -48%;
+	margin-top: 3.3%;
+	padding-top: 10px;
+}
+#family {
+	transform: scale(100px,100px);
 }
