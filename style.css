@@ -23,6 +23,7 @@ a {
 	margin-top: 4px;
 	padding-right: 10px;
 	border-radius: 10px;
+	margin-left: 20px;
 }
 a:hover {
 	background-color: #CC6958;
@@ -63,13 +64,12 @@ td:first-of-type {
 }
 section {
 	background-color:#CC6958;
-	max-width: 50%;
-	margin-left: 25%;
-	display: in;
+	max-width: 56%;
+	margin-left: 22%;
 }
 input:focus {
 	background-color: #CC6958;
-	font-size: 120%;
+	font-size: 101%;
 
 }
 button {
