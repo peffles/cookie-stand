@@ -1,6 +1,4 @@
-header {
-	background-color: #D0AE73;
-}
+
 h1 {
 	font-size: 56px;
 }
@@ -96,7 +94,7 @@ hr {
 	border-color: black;
 }
 .sidebar {
-	background-color: rgba(204,105,88,0.2);
+	background-color: rgba(204,105,88,0.3);
 	width: 19%;
 	height: 500px;
 	display: inline-block;
