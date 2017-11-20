@@ -94,11 +94,14 @@ hr {
 }
 .sidebar {
 	background-color: rgba(204,105,88,0.2);
-	width: 18%;
+	width: 19%;
 	height: 500px;
 	display: inline-block;
 	position: absolute;
 	margin-left: -48%;
 	margin-top: 3.3%;
-
+	padding-top: 10px;
+}
+#family {
+	transform: scale(100px,100px);
 }
